@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:icon="@drawable/home_icon"
+        android:id="@+id/homeId"/>
+    <item android:title="Completed"
+        android:icon="@drawable/completed"
+        android:id="@+id/completeId"/>
+    <item android:title="Profile"
+        android:icon="@drawable/person_icon"
+        android:id="@+id/profileId"/>
+
+</menu>

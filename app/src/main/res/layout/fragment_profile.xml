@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.ProfileFragment"
+    android:background="@drawable/color_gradient">
+
+    <FrameLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="210dp"
+        android:layout_gravity="center">
+
+        <!-- Border -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_image_border"/>
+
+        <!-- Image with padding -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+    </FrameLayout>
+
+
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Edit Profile-Picture"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/profileGreeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:background="@drawable/compcolor"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/screen"
+
+        android:padding="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/completedTaskCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Completed Tasks: 0"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/incompleteTaskCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Incomplete Tasks: 0"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/taskProgressIndicator"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:indeterminate="false"
+            android:visibility="visible"
+            app:trackThickness="8dp"
+            app:indicatorColor="@color/purple"
+            app:trackColor="@android:color/darker_gray"
+            />
+        <TextView
+            android:id="@+id/taskProgressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Completion: 0%"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="200dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:text="Reset All Task" />
+
+    <Button
+        android:id="@+id/button_logout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Log-Out"
+        />
+
+
+</LinearLayout>

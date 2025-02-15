@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">To-Do</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Priority Options -->
+    <string-array name="priority_options">
+        <item>Select Priority</item>
+        <item>High</item>
+        <item>Moderate</item>
+        <item>Low</item>
+    </string-array>
+
+    <!-- Category Options -->
+    <string-array name="category_options">
+        <item>Select Category</item>
+        <item>Household</item>
+        <item>Work</item>
+        <item>Study</item>
+    </string-array>
+
+</resources>

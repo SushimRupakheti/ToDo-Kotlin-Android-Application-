@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer border -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent"/>
+            <stroke
+                android:width="2dp"
+                android:color="@color/white"/>
+        </shape>
+    </item>
+
+    <!-- Inner gap (background color for spacing) -->
+    <item android:drawable="@android:color/black" android:inset="6dp"/>
+</layer-list>
