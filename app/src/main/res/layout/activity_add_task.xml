@@ -6,17 +6,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.activity.AddTaskActivity"
-    android:background="@drawable/gradient">
+    android:background="@drawable/gradient"
+    >
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
         android:text="Add-Task"
-        android:textColor="@color/white"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,7 +36,8 @@
         android:textColor="@color/black"
         android:textColorHint="@color/grey"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        />
 
     <EditText
         android:id="@+id/UpdateTaskDate"
@@ -76,6 +79,7 @@
         android:layout_marginStart="27dp"
         android:layout_marginTop="18dp"
         android:ems="10"
+        android:textColor="@color/white"
         android:text="Select Task Priority:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/UpdateDescription" />
@@ -99,6 +103,7 @@
         android:layout_marginStart="27dp"
         android:layout_marginTop="14dp"
         android:ems="10"
+        android:textColor="@color/white"
         android:text="Select Task Category:"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerPriority" />
@@ -116,15 +121,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview2" />
 
+
     <Button
         android:id="@+id/submitButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="159dp"
-        android:layout_marginTop="27dp"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="40dp"
+        android:paddingTop="0dp"
         android:text="Add Task"
         app:layout_constraintStart_toStartOf="parent"
+        android:foregroundGravity="center"
+        android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/spinnerCategory" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

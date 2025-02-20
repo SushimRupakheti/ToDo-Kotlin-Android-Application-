@@ -5,18 +5,18 @@
     android:orientation="vertical"
     android:id="@+id/submitButton"
     android:layout_width="match_parent"
-    android:background="@color/blue"
+    android:background="@drawable/newgradient"
     android:layout_height="match_parent"
     tools:context=".ui.activity.SignupActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="179dp"
-        android:layout_height="119dp"
-        app:srcCompat="@drawable/bglogo"
+        android:layout_width="198dp"
+        android:layout_height="168dp"
         android:layout_gravity="center"
+        android:layout_marginTop="60dp"
         android:layout_marginBottom="20dp"
-        android:layout_marginTop="20dp"/>
+        app:srcCompat="@drawable/bglogo" />
 
     <TextView
         android:id="@+id/registerText"
@@ -103,13 +103,13 @@
         android:hint="Enter password"
         android:background="@drawable/border"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"/>
 
     <Button
         android:id="@+id/signUp"
-        android:layout_width="400dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Sign up"
         android:layout_gravity="center"

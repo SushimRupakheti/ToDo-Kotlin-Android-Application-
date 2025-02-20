@@ -7,6 +7,19 @@
     android:layout_height="match_parent"
     android:background="@drawable/color_gradient">
 
+    <TextView
+        android:id="@+id/emptyState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Tasks added yet!"
+        android:textSize="18sp"
+        android:textColor="@android:color/darker_gray"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="409dp"
@@ -42,11 +55,13 @@
         android:id="@+id/TaskText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="85dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="Tasks To-Be Done"
+        android:text="Tasks To-Be Done ⚠"
         android:textSize="30dp"
+        android:textColor="@color/white"
+        android:textStyle="bold|normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
